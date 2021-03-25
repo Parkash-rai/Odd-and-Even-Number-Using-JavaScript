@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<style>
+#main{
+	 background-color: darkcyan;
+	 margin-top:60px;
+	 height: 445px;
+	 width: 450px;
+	 border-radius:30px;
+	 margin-left: 150px;}
+input[type=text]{	
+	border-radius: 10px;
+	padding: 10px;
+	width: 65%;
+    font-size:17px;
+	border:none;
+	margin:25px;
+	height:10px;
+	margin-left:60px;}
+input[type=submit]{
+    background:orange;
+    color:#fff;
+    font-weight:bold;
+    height:40px;
+    margin-left:160px;
+    width: 120px;
+    border-radius: 40px;
+
+}
+</style>
+<script>
+function result(){
+var a;
+a=Number(document.getElementById("first").value);
+if(a==""){
+	alert("Not any Number in the label");
+}
+else if(a%2==0){
+	alert("It is a EVEN Number.");
+}
+else if(a%2!=0){
+
+	alert("It is an ODD Number.")
+}
+}
+</script>
+</head>
+<body>
+<div id="main">
+	<h1 style="padding-top: 65px; text-decoration: underline; margin-left: 80px;">ODD/EVEN Number </h1>
+		<h1 style="text-decoration: underline; margin-left: 135px;">In Alert Box </h1><br>
+
+<label Style="font-weight:bold;  margin-left:134px; font-size:22px;color:White;">
+Enter the  Number </label>
+<input type="text" id="first" placeholder="Enter the Number"><br>
+<input type="submit" value="Result"onclick="result()"></button><br>
+
+</div>
+</body>
+</html>
